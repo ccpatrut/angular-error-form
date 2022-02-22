@@ -1,3 +1,19 @@
-<hallo>
+<div class="container">
+  <form [formGroup]="form">
+    <mat-form-field appearance="outline">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Name" formControlName="username">
+      <mat-error>
+        <show-error [control]="form.controls.username"></show-error>
+      </mat-error>
+    </mat-form-field>
 
-</hallo>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email address" formControlName="email">
+      <mat-error>
+        <show-error [control]="form.controls.email"></show-error>
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
