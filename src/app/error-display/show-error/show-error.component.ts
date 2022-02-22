@@ -7,10 +7,7 @@ import { ValidationErrors } from '@angular/forms';
   styleUrls: ['./show-error.component.scss']
 })
 export class ShowErrorComponent {
-
   @Input('control')
   control!: ValidationErrors;
-
-  constructor() {}
 
 }
